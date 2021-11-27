@@ -23,8 +23,8 @@ The designs were created to the following widths:
 ### Neutral
 
 - Very dark blue: hsl(226, 43%, 10%)
-- Dark blue: hsl(235, 46%, 20%)
-- Desaturated blue: hsl(235, 45%, 61%)
+- Dark blue: hsl(235, 46%, 20%)  - used For background
+- Desaturated blue: hsl(235, 45%, 61%) -profile Color
 - Pale Blue: hsl(236, 100%, 87%)
 
 ## Typography
