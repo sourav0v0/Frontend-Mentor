@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;    
+    height:100vh;
+    margin: 0;
+    background: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+.cart{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    width: 25em;
+    height: 25em;
+    position: relative;
+    background: white;
+}
+.cart-top{
+    height: 40%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background: url('./images/bg-pattern-card.svg');
+}
+.cart-body{
+    text-align: center;
+   
+}
+.img-icon{
+    position:absolute;
+    left:37%;
+    top: 27%;
+    border-radius: 50%;
+    border:4px solid white;
+}
+.body-desc{
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+.details{
+    display: flex;
+    justify-content: space-evenly;
+}
+strong{
+    display: block;
+}
+.items{
+    margin-top:10px ;
+    margin-bottom:10px ;
+}
+span{
+    color:  hsl(0, 0%, 59%);
+}
+.top-left{
+    position: absolute;
+    top:-30%;
+    left:-10%;
+    width: 50%;
+}
+.top-right{
+    position: absolute;
+    width: 45%;
+    bottom: -40%;
+    right: 0;
+}
+@media screen and (max-width: 375px){
+    .cart{
+        margin-left: 1em;
+        margin-right: 1em;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5%;
+        width: 25em;
+        height: 25em;
+        position: relative;
+        background: white;
+    }
+    .top-left{
+        position: absolute;
+        top:-20%;
+        left:-30%;
+        width: 80%;
+    }
+    .top-right{
+        position: absolute;
+        bottom: -10%;
+        right: -30%;
+        width: 80%;
+    }
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Raleway:wght@300;500&display=swap');
+/* 
+ Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
+- Pale Blue: hsl(243, 100%, 93%)
+- Grayish Blue: hsl(229, 7%, 55%)
+- Dark Blue: hsl(228, 56%, 26%)
+- Very Dark Blue: hsl(229, 57%, 11%) */
+*{
+    padding: 0;
+    margin:0;
+    background-color: #0e1b3d;;
+    font-family: 'Raleway', sans-serif;
+}
+.top{
+    background-color:hsl(228, 56%, 26%);
+    display: flex;
+    margin:10px auto;
+    width: 340px;
+    height: 180px;
+    border-radius:10px 100px 10px 10px;
+    
+}
+img{
+    background-color: inherit;
+}
+.top-logo{
+    background-color: transparent;
+    display: inline;
+}
+.container{
+    background-color: transparent;
+    margin:30px 0 0 30px;
+}
+ul{
+    background-color: transparent;
+    margin-top: 10px;
+}
+.icon-top-1{
+    
+    display: inline-block;
+    height: 22px;
+    width: auto;
+    background-color: hsl(229, 57%, 11%);
+    padding:7px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.icon-top-2{
+    display: inline-block;
+    height: 22px;
+    width: auto;
+    background-color: hsl(229, 57%, 11%);
+    padding:7px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.icon-top-3{
+    display: inline-block;
+    height: 18px;
+    width: auto;
+    background-color: hsl(229, 57%, 11%);
+    padding:9px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.bottom{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin:10px auto;
+    width: 340px;
+    height: 140px;
+    background-color:hsl(228, 56%, 26%);
+    border-radius: 10px;
+}
+p{
+    display: block;
+    padding:20px;
+    color:hsl(243, 100%, 93%);
+    background-color: transparent;
+}
+b > *{
+    font-weight: 800;
+}
+.progress-cart{
+    background-color:inherit;
+}
+.progress-bar{
+    height: 15px;
+    width: 95%;
+    position: relative;
+    background-image: linear-gradient(to right, rgb(245, 169, 126) ,rgb(207, 16, 16) );
+    margin: auto;
+    border-radius: 50px;
+}
+.progress-icon{
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: white;
+    top: 5%;
+    left: 0.5%;
+}
+.left-data{
+    float: left;
+    margin: 5px;
+    color: white;
+}
+.right-data{
+    float: right;
+    margin: 5px;
+    color: white;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 70px;
+    padding:0 20px 0 20px;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 30px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,70%);
+}
+h3{
+    background-color: inherit;
+    display: inline;
+}
+.number{
+    background-color: inherit;
+    font-weight: 20px;
+    width: 100%;
+}
+.text{
+    margin-left: 5px;
+    font-size: 15px;
+    background-color: inherit;
+}

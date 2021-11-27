@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+}
+
+body{
+    background-color:hsl(217, 54%, 11%);
+}
+.cart{
+    margin: 50vh auto 0 auto;
+    transform: translateY(-50%);
+    background-color: hsl(216, 50%, 16%);
+    width: 300px;
+    height: 530px;
+    max-width: 300px;
+    max-height: 550px;
+    border-radius: 20px;
+}
+.image{
+    position: relative;
+}
+.image .main-image{
+    position: relative;
+    max-width: 260px;
+    border-radius: 10px;
+    margin:20px ;
+}
+
+
+
+h2{
+    color:hsl(0, 0%, 100%);
+    opacity: 75%;
+    margin:0 20px ;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+h2:hover{
+    color:hsl(172, 100%, 50%);
+    cursor:pointer
+}
+p{
+    margin:20px ;
+    opacity: 50%;
+}
+b{
+    color: hsl(215, 51%, 70%);
+    opacity: 100%;
+}
+hr{
+    width: 90%;
+    margin: auto;
+}
+.span{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+
+.icon-eth{
+    display: inline-block;
+    background-image: url(./images/icon-ethereum.svg);
+    background-size: cover;
+    height: 25px;
+    width: 15px;
+}
+.icon-clock{
+    display: inline-block;
+    background-image: url(./images/icon-ethereum.svg);
+    background-size: cover;
+    height: 25px;
+    width: 15px;
+}
+.left h5{
+    color: hsl(172, 100%, 50%);
+}
+.avatar{
+    display: inline-block;
+    width: 40px;
+    margin: 10px 0 0 20px;
+}
+span{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.cart-footer{
+    position: relative;
+}
+h3,h4,h5,h6{
+    display: inline-block;
+    transform: translateY(-25%);
+}
+.cart-footer span{
+    top:50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+.hover-image-container{
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    position: absolute;
+    left:20px;
+    top:20px;
+    border-radius: 10px;
+    opacity: 60%;
+    width: 260px;
+    height: 260px;
+    background-color: hsl(172, 100%, 50%);
+    visibility: hidden;
+}
+b:hover{
+    color:hsl(172, 100%, 50%);
+    cursor:pointer;
+}
+.image:hover > #hover-image{
+    visibility: visible;
+    cursor:pointer
+} 

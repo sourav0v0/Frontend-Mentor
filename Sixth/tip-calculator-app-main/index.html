@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="main-heading">
+  <h1>SPLT</h1>
+  <h1>TTER</h1>
+  </div>
+  <div class="cart">
+  <div class="cart-item">
+  <p> Bill</p>
+  <div class="input-box">
+    <i class="fa fa-usd" aria-hidden="true"></i>
+  <input type="number" id='price' class="input-full"/>
+  </div>
+  <p>Select Tip % </p>
+  <div class="price-list">
+    <div class="price-item" onclick="preGen(this)" value="5">
+    5%
+    </div><div class="price-item" onclick="preGen(this)" value="10">
+    10%
+    </div><div class="price-item" onclick='preGen(this)' value="15">
+    15%
+    </div><div class="price-item" onclick='preGen(this)' value="25">
+    25%
+  </div><div class="price-item" onclick='preGen(this)' value="50">
+    50%
+  </div><!--
+    --><div class="price-item custom" value="0">
+      <input type="number" id='custom' placeholder="Custom" >
+  </div>      
+  </div>
+  <p>Number of People</p>
+  <div class="input-box">
+    <i class="fa fa-user" aria-hidden="true"></i>
+    <input type="number" id='people'  class="input-full">
+  </div>
+  </div>
+  <div class="cart-item">
+  <div class="gen-cart">
+    <div class="gen-item">
+      <div class="item-desc">
+      <h4>Tip Amount</h4>
+      <p>/ person</p>
+      </div>
+      <div class="item-price">
+        <span id="tip"> $0</span>
+      </div>
+    </div>
+    <div class="gen-item">
+      <div class="item-desc">
+      <h4>Total</h4>
+      <p>/ person</p>
+      </div>
+      <div class="item-price">
+        <span id="total"> $0</span>
+      </div>
+    </div>
+  <button class="reset"  id="reset">Reset</button>
+  </div>
+  </div>  
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>

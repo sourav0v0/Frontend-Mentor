@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+/*  Container */
+.container{
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+    align-content: stretch;
+}
+.h-container{
+    display: flex; 
+}
+/* Childs of container */
+.left-item{
+    width: 25%;
+    height: 80vh;
+    background-color: red;
+}
+.right-item{
+    width: 75% ;
+    height: 80vh;
+}
+.h-item
+{
+   height: 35vh;
+   margin: 20px;
+   background-color:red;
+}
+.profile{
+    display: block;
+    margin: 5px;
+    background-color: blue;
+}
