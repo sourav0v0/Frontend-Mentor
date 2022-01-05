@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;500&family=Rubik:wght@300;400;500&display=swap');
+/* Navigation */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+nav {
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 40px;
+    padding: 5px 3px;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+nav *{
+    margin: 2px;
+}
+.nav-links .items{
+    margin: 5px;
+    display: none;
+}
+.hambergur i{
+    width: 20px;
+    font-size: 25px;
+    color: black;
+}
+.hambergur img{
+    margin-left: 10px;
+}
+.nav-icons img{
+    width: 25px;
+    margin-right: 10px;
+    height: auto;
+}
+
+/* Carousel */
+.gallery {
+    position: relative;
+}
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    background: #e2eaf4;
+}
+
+.carousel-item {
+  width: 100%;
+}
+
+.arrow-left , .arrow-right {
+    position: absolute;
+    height: 20px;
+    width: 15px;
+    background-color: white;
+    padding:10px 12.5px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5%;
+    transform:translateY(-50%);
+}
+.arrow-right{
+    left: 85%;
+}
+
+/* Body */
+.container {
+    padding: 15px 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.sub-title{
+    color:hsl(26, 100%, 55%) ;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;   
+    padding-bottom: 5px;
+}
+
+.item-heading{
+    font-weight: 700;
+    word-spacing: 3px;
+    letter-spacing: 1px;   
+    
+}
+
+.item-desc{
+    padding: 10px 0;
+    opacity: 50%;
+    word-spacing: 2px;
+    line-height: 1.5;
+}
+
+.price{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-left{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.price-left > h4{
+    transform: translateY(35%);
+    margin-left: 10px;
+    background-color: hsl(25, 100%, 94%);
+    color:hsl(26, 100%, 55%);
+    height: 25px;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.price > h4{
+    transform: translateY(35%);
+    opacity: 50%;
+    height: 25px;
+}
+button{
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+    background-color:hsl(26, 100%, 55%);
+    color: white;
+    box-shadow: 5px 5px 10px hsl(18deg 50% 43%);
+}
+.attribution ,.attribution a{
+    text-align: center;
+    color: orangered;
+    text-decoration: underline;
+    margin: 5px 0;
+}
