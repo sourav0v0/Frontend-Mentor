@@ -4,12 +4,13 @@
     padding: 0;
     margin: 0;
     font-family: 'Outfit', sans-serif;
+    background:  hsl(0, 0%, 100%);
 }
 nav {
     display: flex;
     width: 100%;
     position: relative;
-    height: 40px;
+    height: 45px;
     padding: 5px 3px;
     justify-content: space-around;
     box-sizing: border-box;
@@ -44,7 +45,7 @@ nav *{
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    overflow-x: scroll;
+    overflow-x: hidden;
     background: #e2eaf4;
 }
 
@@ -122,7 +123,36 @@ nav *{
     opacity: 50%;
     height: 25px;
 }
-button{
+.quantity{
+    position: relative;
+}
+input[type="number"]{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+    border: none;
+    background-color: hsl(227, 27%, 94%);
+}
+
+.increment{
+    position: absolute;
+    height: auto;
+    width: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+}
+.decrement{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    width: 15px;
+    left: 5%;
+}
+.addCart{
     width: 100%;
     height: 40px;
     margin: auto;
