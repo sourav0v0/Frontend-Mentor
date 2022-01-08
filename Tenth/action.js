@@ -1,3 +1,4 @@
+// Navigation Button Carousel
 var tracker = 0;
 var carouselElements = document.querySelectorAll(".carousel-item");
 var navNext = document.querySelector('.arrow-right');
@@ -16,6 +17,10 @@ navNext.addEventListener('click',function(){
         behavior: 'smooth'
     });
 });
-$('.carousel').bind('touchstart touchend touchup', function(event) {
-    event.stopPropagation();
+//Carousel End
+//Nav Bar hamburger
+var burger = document.querySelector('.fa-bars');
+burger.addEventListener('click',()=>{
+    var navSideBars = document.querySelector('.nav-links');
+    navSideBars.classList.toggle("hide");
 });
