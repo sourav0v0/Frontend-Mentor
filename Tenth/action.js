@@ -20,7 +20,24 @@ navNext.addEventListener('click',function(){
 //Carousel End
 //Nav Bar hamburger
 var burger = document.querySelector('.fa-bars');
+var navSideBars = document.querySelector('.nav-links');
 burger.addEventListener('click',()=>{
-    var navSideBars = document.querySelector('.nav-links');
     navSideBars.classList.toggle("hide");
+});
+// Close Button 
+var close = document.querySelector('.close-nav');
+close.addEventListener('click',()=>{
+    navSideBars.classList.toggle("hide");
+});
+// Adding In Input Box
+var decrement = document.querySelector('.decrement');
+var increment = document.querySelector('.increment');
+var inputField = document.getElementById('quantity-data');
+decrement.addEventListener('click',()=>{
+    if(inputField.value >0)
+        inputField.value -= 1;
+});
+increment.addEventListener('click',()=>{
+    var value =inputField.value;
+    inputField.value = Number(1)+Number(value);
 });
