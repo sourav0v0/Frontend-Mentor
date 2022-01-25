@@ -28,7 +28,7 @@ nav *{
     color: black;
 }
 .hambergur img{
-    margin-left: 10px;
+    margin-left: 10px;000
 }
 .nav-icons img{
     width: 25px;
@@ -102,7 +102,8 @@ nav *{
     transform:translateY(-50%);
 }
 .arrow-right{
-    left: 85%;
+    left: 95%;
+    transform:translate(-100%,-50%);
 }
 
 /* Body */
@@ -206,4 +207,75 @@ input[type="number"]{
     color: orangered;
     text-decoration: underline;
     margin: 5px 0;
+}
+@media screen and (min-width: 780px) {
+    nav {
+        height: 80px;
+    }
+    .hambergur{
+        display: inline;
+        align-items: center;
+    }
+    .hambergur img{ 
+        display: block;
+        height: 35px;
+        margin: 12px;
+    }
+    .hambergur i{
+        display: none;
+    }
+    .close-nav{
+        display: none;
+    }
+    .nav-links{
+        display: flex;
+        position: relative;
+        height: auto;
+        text-align: center;
+        color:gray;
+    }
+    .nav-links .items{
+        width: auto;
+        margin:0 5px;
+        font-size: 20px;
+    }
+    .nav-icons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-icons img{
+        height: 30px;
+        width: 30px;
+    }
+    .nav-icons .image-avatar{
+        height: 60px;
+        width: 60px;
+    } 
+    .arrow-right , .arrow-left{
+        display: none;
+    }
+    .carousel{
+        background: white;
+    }
+    .carousel-item{
+        width: 70px;
+        height: 70px;
+        border-radius: 5px;
+    }
+    .carousel-active{
+        height: 350px;
+        width: 350px;
+        border-radius: 10px ;
+    }
+    .wrapper{
+        display: flex;
+        width: 80vw;
+        margin: 50px auto;
+        justify-content: space-around;
+    }
+    .active-Elements{
+        opacity: 50%;
+    }
 }
