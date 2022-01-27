@@ -28,7 +28,7 @@ nav *{
     color: black;
 }
 .hambergur img{
-    margin-left: 10px;000
+    margin-left: 10px;
 }
 .nav-icons img{
     width: 25px;
@@ -39,7 +39,7 @@ nav *{
 .nav-links{
     display: block;
     margin: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -47,12 +47,14 @@ nav *{
     z-index:1;
     padding-top: 25px;
 }
+
 .nav-links .items{
     font-size: 17px;
     font-weight: 800;
     margin: 20px 10px;
     letter-spacing: 2px;
 }
+
 .close-nav{
     margin-left: auto;
     margin-right:20px;
@@ -163,6 +165,7 @@ nav *{
 }
 .quantity{
     position: relative;
+    width: 100%;
 }
 input[type="number"]{
     width: 100%;
@@ -178,19 +181,21 @@ input[type="number"]{
     position: absolute;
     height: auto;
     width: 15px;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     right: 1%;
-    padding :15px;
+    background-color: #ecedf4;
+    padding :13px;
 }
 .decrement{
     position: absolute;
     height: auto;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
-    width: 15px;
+    width: 13px;
     left: 1%;
-    padding :18px;
+    background-color: #ecedf4;
+    padding :17.5px;
 }
 .addCart{
     width: 100%;
@@ -208,7 +213,15 @@ input[type="number"]{
     text-decoration: underline;
     margin: 5px 0;
 }
+
+.carousel-active{
+    display: none;
+}
+
 @media screen and (min-width: 780px) {
+    .decrement , .increment{
+        top:60%
+    }
     nav {
         height: 80px;
     }
@@ -265,9 +278,11 @@ input[type="number"]{
         border-radius: 5px;
     }
     .carousel-active{
-        height: 350px;
-        width: 350px;
+        display: block;
+        height: 400px;
+        width: 400px;
         border-radius: 10px ;
+        margin-bottom: 15px;
     }
     .wrapper{
         display: flex;
@@ -275,7 +290,60 @@ input[type="number"]{
         margin: 50px auto;
         justify-content: space-around;
     }
+    .input[type="number"]{
+        margin: 0;
+    }
     .active-Elements{
         opacity: 50%;
+    }
+    .container{
+        margin: 0 50px 0 50px;
+    }
+    .item-heading{
+        font-size: 45px;
+    }
+    .price-left > h4{
+        height: 20px;
+    }
+    .price{
+        flex-direction: column;
+        height: auto;
+        margin-bottom:10px ;
+    }
+    .quantity{
+        box-sizing: border-box;
+        display: inline-block;
+        width: 50%;
+        padding-top: 5px;
+        height: 40px;
+    }
+    .addCart{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 860px) and (min-width:780px) {
+    .carousel-active{
+        display: block;
+        height: 300px;
+        width: 300px;
+        border-radius: 10px ;
+        margin-bottom: 15px;
+    }
+    .hambergur img {
+        display: block;
+        height: 28px;
+        margin: 18px;
+    }
+}
+@media screen and (max-width: 1220px) and (min-width:780px) {
+    .quantity{
+        width: 100%;
+        padding-top: 5px;
+        height: 40px;
+    }
+    .addCart{
+        margin-top:10px ;
+        width: 100%;
     }
 }
