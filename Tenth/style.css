@@ -6,6 +6,9 @@
     font-family: 'Outfit', sans-serif;
     background:  hsl(0, 0%, 100%);
 }
+body{
+    position: relative;
+}
 nav {
     display: flex;
     width: 100%;
@@ -18,10 +21,7 @@ nav {
 nav *{
     margin: 2px;
 }
-.nav-links .items{
-    margin: 5px;
-    display: none;
-}
+
 .hambergur i{
     width: 20px;
     font-size: 25px;
@@ -36,6 +36,45 @@ nav *{
     height: auto;
 }
 
+.nav-links{
+    display: block;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 60vw;
+    z-index:1;
+    padding-top: 25px;
+}
+
+.nav-links .items{
+    font-size: 17px;
+    font-weight: 800;
+    margin: 20px 10px;
+    letter-spacing: 2px;
+}
+
+.close-nav{
+    margin-left: auto;
+    margin-right:20px;
+    display: block;
+    height: 20px;
+    animation: closeAnimation 2s infinite alternate;
+}
+/* Close Animation  */
+@keyframes closeAnimation{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(45deg);
+    }
+}
+/* Close Animation End */
+.hide{
+    display: none;
+}
 /* Carousel */
 .gallery {
     position: relative;
@@ -65,7 +104,8 @@ nav *{
     transform:translateY(-50%);
 }
 .arrow-right{
-    left: 85%;
+    left: 95%;
+    transform:translate(-100%,-50%);
 }
 
 /* Body */
@@ -125,6 +165,7 @@ nav *{
 }
 .quantity{
     position: relative;
+    width: 100%;
 }
 input[type="number"]{
     width: 100%;
@@ -140,17 +181,21 @@ input[type="number"]{
     position: absolute;
     height: auto;
     width: 15px;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
-    right: 5%;
+    right: 1%;
+    background-color: #ecedf4;
+    padding :13px;
 }
 .decrement{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     height: auto;
-    width: 15px;
-    left: 5%;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 13px;
+    left: 1%;
+    background-color: #ecedf4;
+    padding :17.5px;
 }
 .addCart{
     width: 100%;
@@ -167,4 +212,138 @@ input[type="number"]{
     color: orangered;
     text-decoration: underline;
     margin: 5px 0;
+}
+
+.carousel-active{
+    display: none;
+}
+
+@media screen and (min-width: 780px) {
+    .decrement , .increment{
+        top:60%
+    }
+    nav {
+        height: 80px;
+    }
+    .hambergur{
+        display: inline;
+        align-items: center;
+    }
+    .hambergur img{ 
+        display: block;
+        height: 35px;
+        margin: 12px;
+    }
+    .hambergur i{
+        display: none;
+    }
+    .close-nav{
+        display: none;
+    }
+    .nav-links{
+        display: flex;
+        position: relative;
+        height: auto;
+        text-align: center;
+        color:gray;
+    }
+    .nav-links .items{
+        width: auto;
+        margin:0 5px;
+        font-size: 20px;
+    }
+    .nav-icons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-icons img{
+        height: 30px;
+        width: 30px;
+    }
+    .nav-icons .image-avatar{
+        height: 60px;
+        width: 60px;
+    } 
+    .arrow-right , .arrow-left{
+        display: none;
+    }
+    .carousel{
+        background: white;
+    }
+    .carousel-item{
+        width: 70px;
+        height: 70px;
+        border-radius: 5px;
+    }
+    .carousel-active{
+        display: block;
+        height: 400px;
+        width: 400px;
+        border-radius: 10px ;
+        margin-bottom: 15px;
+    }
+    .wrapper{
+        display: flex;
+        width: 80vw;
+        margin: 50px auto;
+        justify-content: space-around;
+    }
+    .input[type="number"]{
+        margin: 0;
+    }
+    .active-Elements{
+        opacity: 50%;
+    }
+    .container{
+        margin: 0 50px 0 50px;
+    }
+    .item-heading{
+        font-size: 45px;
+    }
+    .price-left > h4{
+        height: 20px;
+    }
+    .price{
+        flex-direction: column;
+        height: auto;
+        margin-bottom:10px ;
+    }
+    .quantity{
+        box-sizing: border-box;
+        display: inline-block;
+        width: 50%;
+        padding-top: 5px;
+        height: 40px;
+    }
+    .addCart{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 860px) and (min-width:780px) {
+    .carousel-active{
+        display: block;
+        height: 300px;
+        width: 300px;
+        border-radius: 10px ;
+        margin-bottom: 15px;
+    }
+    .hambergur img {
+        display: block;
+        height: 28px;
+        margin: 18px;
+    }
+}
+@media screen and (max-width: 1220px) and (min-width:780px) {
+    .quantity{
+        width: 100%;
+        padding-top: 5px;
+        height: 40px;
+    }
+    .addCart{
+        margin-top:10px ;
+        width: 100%;
+    }
 }

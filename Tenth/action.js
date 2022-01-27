@@ -1,3 +1,4 @@
+// Navigation Button Carousel
 var tracker = 0;
 var carouselElements = document.querySelectorAll(".carousel-item");
 var navNext = document.querySelector('.arrow-right');
@@ -16,6 +17,41 @@ navNext.addEventListener('click',function(){
         behavior: 'smooth'
     });
 });
-$('.carousel').bind('touchstart touchend touchup', function(event) {
-    event.stopPropagation();
+//Carousel End
+//Nav Bar hamburger
+var burger = document.querySelector('.fa-bars');
+var navSideBars = document.querySelector('.nav-links');
+burger.addEventListener('click',()=>{
+    navSideBars.classList.toggle("hide");
 });
+// Close Button 
+var close = document.querySelector('.close-nav');
+close.addEventListener('click',()=>{
+    navSideBars.classList.toggle("hide");
+});
+// Adding In Input Box
+var decrement = document.querySelector('.decrement');
+var increment = document.querySelector('.increment');
+var inputField = document.getElementById('quantity-data');
+decrement.addEventListener('click',()=>{
+    if(inputField.value >0)
+        inputField.value -= 1;
+});
+increment.addEventListener('click',()=>{
+    var value =inputField.value;
+    inputField.value = Number(1)+Number(value);
+});
+
+if(window.innerWidth >= 760){
+    var lastElement = carouselElements[0];
+    for(var i=0;i<carouselElements.length;i++){
+        carouselElements[i].addEventListener('click',(element)=>{
+        lastElement.classList.remove('active-Elements');
+        element.target.classList.add('active-Elements');
+        lastElement =  element.target;
+        var active = document.querySelector('.carousel-active');
+        active.setAttribute('src',element.target.getAttribute('src'));
+    });
+    }
+}
+
