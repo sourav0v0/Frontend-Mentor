@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;500&family=Roboto:wght@100;300;500&family=Rubik:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: url(./assets/home/background-home-desktop.jpg) no-repeat center;
+    background-size: cover;
+    color: white;
+}
+nav{
+    margin-top: 40px;
+    display: flex;
+    height:80px;
+    width: 50vw;
+    margin-left: auto;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    align-items: center;
+}
+nav span b{
+    opacity: 1;
+    display: inline-block;
+    margin-right: 5px;
+}
+nav span{
+    opacity: 1;
+    margin: 5px 20px 0 20px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+nav span::after{    
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: -28px;
+    left: 0;
+    
+}
+
+nav span:hover:after{
+    border-bottom: 5px solid white;
+}
+section{
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between ;
+    
+}
+.left{
+    width: 350px;
+}
+h3{
+    font-size: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+h1{
+    margin: 15px 0;
+    font-size: 85px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+p{
+    font-weight: 100;
+}
+.explore{
+    display: flex;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: white;
+    align-items: center;
+    justify-content: center; 
+}
+
+.explore .data{
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: rgb(24, 24, 73);
+}
+/***************** TABLET ************/
+
+/***************** MOBLIE ************/
