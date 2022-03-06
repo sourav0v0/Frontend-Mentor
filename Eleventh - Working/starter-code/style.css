@@ -6,6 +6,7 @@
     font-family: 'Roboto', sans-serif;
 }
 body{
+    height: 100vh;
     background: url(./assets/home/background-home-desktop.jpg) no-repeat center;
     background-size: cover;
     color: white;
@@ -19,6 +20,7 @@ nav{
     justify-content: flex-start;
     backdrop-filter: blur(10px);
     align-items: center;
+    display: none;
 }
 nav span b{
     opacity: 1;
@@ -41,7 +43,9 @@ nav span::after{
     left: 0;
     
 }
-
+.icon{
+    display: none;
+}
 nav span:hover:after{
     border-bottom: 5px solid white;
 }
@@ -87,5 +91,93 @@ p{
     color: rgb(24, 24, 73);
 }
 /***************** TABLET ************/
+@media screen and (max-width:1024px) {
+    nav{
+        margin-left: 0;
+        width: 100%;
+    }
+    .explore{
+        height: 150px;
+        width: 150px;
+    }
+    .explore .data{
+        font-size: 30px;
+    }
+    body{
+    background: url(./assets/home/background-home-tablet.jpg) no-repeat center;
+    background-size: cover;
+    }
+}
 
 /***************** MOBLIE ************/
+
+@media screen and (max-width:768px) {
+    section{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .explore{
+        margin-top: 30px;
+        height: 60px;
+        width: 300px;
+        border-radius: 0;
+    }
+    .explore .data{
+        font-size: 30px;
+    }
+    body{
+    background: url(./assets/home/background-home-mobile.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    }
+    nav{
+        display: none;
+        position: fixed;
+        left: 100%;
+        flex-direction: column;
+        align-items: center;
+        height:100vh;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0;
+        top: 0;
+        padding-top: 50px;
+    }
+    nav span{
+        margin:20px
+    }
+    nav span:hover:after{
+        border: none;
+    }
+    .left{
+        text-align: center;
+    }
+    .icon{
+        display: block;
+        text-align: right;
+        padding: 20px 20px 0 20px;
+    }
+    .animation-for-nav-open{
+        animation: nav-loading-animation 2s forwards;
+    }
+    .animation-for-nav-close{
+        animation: nav-loading-animation-close 2s forwards;
+    }
+    @keyframes nav-loading-animation-close {
+        0%{
+            left: 0;
+        }
+        100%{
+            left: 100%;
+        }
+    }
+    @keyframes nav-loading-animation {
+        0%{
+            left: 100%;
+        }
+        100%{
+            left: 0;
+        }
+    }
+}
