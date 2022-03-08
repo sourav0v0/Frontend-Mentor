@@ -5,14 +5,24 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 body{
     height: 100vh;
+    padding-top: 40px;
     background: url(./assets/home/background-home-desktop.jpg) no-repeat center;
     background-size: cover;
     color: white;
 }
+body.destination{
+    background: url(./assets/destination/background-destination-desktop.jpg) no-repeat center;
+}
+.light{
+    opacity: 50%;
+}
 nav{
-    margin-top: 40px;
     display: flex;
     height:80px;
     width: 50vw;
@@ -20,7 +30,6 @@ nav{
     justify-content: flex-start;
     backdrop-filter: blur(10px);
     align-items: center;
-    display: none;
 }
 nav span b{
     opacity: 1;
@@ -55,7 +64,6 @@ section{
     margin-top: 200px;
     display: flex;
     justify-content: space-between ;
-    
 }
 .left{
     width: 350px;
@@ -104,8 +112,14 @@ p{
         font-size: 30px;
     }
     body{
+    padding-top: 0px;
     background: url(./assets/home/background-home-tablet.jpg) no-repeat center;
     background-size: cover;
+    }
+    body.destination{
+        background: url(./assets/destination/background-destination-tablet.jpg) no-repeat center;
+        background-size: cover;
+    
     }
 }
 
@@ -127,9 +141,12 @@ p{
         font-size: 30px;
     }
     body{
-    background: url(./assets/home/background-home-mobile.jpg) no-repeat center;
-    background-size: cover;
-    position: relative;
+        background: url(./assets/home/background-home-mobile.jpg) no-repeat center;
+        background-size: cover;
+    }
+    body.destination{
+        background: url(./assets/destination/background-destination-mobile.jpg) no-repeat center;
+        background-size: cover;
     }
     nav{
         display: none;
@@ -143,6 +160,7 @@ p{
         margin-left: 0;
         top: 0;
         padding-top: 50px;
+        z-index: 1;
     }
     nav span{
         margin:20px

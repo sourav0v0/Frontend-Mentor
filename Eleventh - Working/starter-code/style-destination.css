@@ -1,0 +1,56 @@
+
+.left{
+    display: block;
+    width: 35%;
+    text-align: center;
+}
+.left h3{
+    margin-bottom: 20px;
+}
+
+.right{
+    width: 55%;
+}
+section{
+    margin-top: 50px;
+}
+.destination-plant-img{
+    width: 100%;
+}
+.destination > h3 {
+    padding-left: 50px;
+}
+.destination-planet{
+    display: flex;
+    height: 50px;
+    width: 60%;
+    font-size: 20px;
+    font-weight: 100;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-plantest{
+    padding-bottom: 10px;
+}
+.active{
+    border-bottom: 5px solid white;
+}
+.destiantion-content > p{
+ margin: 10px 0;
+ width: 80%;
+}
+
+hr{
+    margin: 10px 0;
+}
+.bottom-content{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-content *{
+    margin-top: 10px;
+}
+
+.bottom-content span:nth-child(2){
+    text-align: end;
+}
