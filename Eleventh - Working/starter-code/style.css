@@ -25,7 +25,7 @@ body.destination{
 nav{
     display: flex;
     height:80px;
-    width: 50vw;
+    width: 55vw;
     margin-left: auto;
     justify-content: flex-start;
     backdrop-filter: blur(10px);
@@ -113,11 +113,11 @@ p{
     }
     body{
     padding-top: 0px;
-    background: url(./assets/home/background-home-tablet.jpg) no-repeat center;
+    background: url(./assets/home/background-home-desktop.jpg) no-repeat center;
     background-size: cover;
     }
     body.destination{
-        background: url(./assets/destination/background-destination-tablet.jpg) no-repeat center;
+        background: url(./assets/destination/background-destination-desktop.jpg) no-repeat center;
         background-size: cover;
     
     }
@@ -141,11 +141,11 @@ p{
         font-size: 30px;
     }
     body{
-        background: url(./assets/home/background-home-mobile.jpg) no-repeat center;
+        background: url(./assets/home/background-home-tablet.jpg) no-repeat center;
         background-size: cover;
     }
     body.destination{
-        background: url(./assets/destination/background-destination-mobile.jpg) no-repeat center;
+        background: url(./assets/destination/background-destination-tablet.jpg) no-repeat center;
         background-size: cover;
     }
     nav{
